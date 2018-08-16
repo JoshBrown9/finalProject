@@ -4,23 +4,13 @@
 
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- test to ensure href's are correct -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      position: relative; 
-  }
-  /*This sections will be moved to its own css file and will be imported*/      
-  #section1 {padding-top:50px;height:700px;color:darkslategray; background-color:lightskyblue;}
-  #section2 {padding-top:50px;height:700px;color:darkslategray; background-color: lightgoldenrodyellow;}
-  #section3 {padding-top:50px;height:700px;color:darkslategray; background-color: lightskyblue;}
-  #section4 {padding-top:50px;height:700px;color:darkslategray; background-color: lightgoldenrodyellow;}
-  #checkroom{padding-top:20px;margin-top:40px; width:500px; height:500px; background-color:beige;}
-  #infopanel{padding-top:20px; margin-top:40px; width: 500px; height: 500px; background-color:beige;}
-  #emailform{padding-top:20px; margin-top:40px; width:auto; height: 150px; background-color:lightblue;}
-  #emaillist{padding-top:20px; background-color:lightgreen; color:darkslategray}
-  </style>
+
+  
 </head>
     
     
@@ -44,7 +34,7 @@
                           <li><a href="#section1">Find a Room</a></li>
                           <li><a href="#section2">Rates</a></li>
                           <li><a href="#section3">Local Attractions</a></li>
-                          <li><a href="#section4">Contact Us</a></li>
+                          <li><a href="#emaillist">Contact Us</a></li>
                           <li><a href="checkres.php">Check My Reservation</a></li> <!-- check reservation will redirect to another page-->
                           </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -132,40 +122,56 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <img src="standard.jpg" class="img-responsive" style="width:100%" alt="standard">
-                                <!-- We can put a style container around the text here -->
+                                <img src="img/standard.jpg" class="img-responsive" style="width:100%" alt="standard">
                                     <h3>Standard</h3>
                                     <h6>From $100</h6>
                                     <p>Double bed</p>
-                                    <!-- We can use icons here to indicate what standard features come with the room-->
-                                    <button class="btn btn-default">Choose Room</button>
+                                    <button class="btn btn-default"><a href= "finalize.php">Choose Room</a></button>
                             </div>
                             <div class="col-sm-4"> 
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                  <img src="business.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  <img src="img/business.jpg" class="img-responsive" style="width:100%" alt="Image">
                                     <h3>Buisiness</h3>
                                     <h6>From $150</h6>
                                     <p>Queen bed</p>
-                                    <!-- We can use icons here to indicate what standard features come with the room-->
-                                    <button class="btn btn-default">Choose Room</button>
+                                <button class="btn btn-default"><a href= "finalize.php">Choose Room</a></button>
                                   
                             </div>
                             <div class="col-sm-4"> 
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <img src="premium.jpg" class="img-responsive" style="width:100%" alt="Image">
+                              <img src="img/premium.jpg" class="img-responsive" style="width:100%" alt="Image">
                                  <h3>Premium</h3>
                                     <h6>From $200</h6>
                                     <p>King bed</p>
-                                    <!-- We can use icons here to indicate what standard features come with the room-->
-                                    <button class="btn btn-default">Choose Room</button>
+                                    <button class="btn btn-default"><a href= "finalize.php">Choose Room</a></button>
                             </div>
                         </div>
                 </div>
         </div>    
         
-        <div id="section3" class="container-fluid">
-        <p>This is where we will put our local attractions</p>
-        </div>
+          <div id="section3" class="container-fluid">
+                <div class="container-fluid bg-4 text-center">    
+                    <h3>Local Attractions</h3><br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                               <img src="localattraction1.jpeg" class="img-responsive" alt="Image1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="col-sm-3"> 
+                                <img src="localattraction2.jpeg" class="img-responsive" alt="Image2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="col-sm-3"> 
+                              <img src="localattraction3.jpeg" class="img-responsive" alt="Image3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="localattraction4.jpeg" class="img-responsive" alt="Image4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                </div>
+        </div>    
         <div id="emaillist" class="container-fluid">
             <h3>Join Our New letter</h3>
             <h4>Sign up to be ahead of all the best deals and rates</h4>
@@ -182,19 +188,6 @@
                 </div>    
             </div>    
         </div>
-        <div id="section4" class="container-fluid">
-        <h3>Welcome to the South West Hotel</h3>
-        <p>Take off your shoes and stay a while at the South West Hotel. The South West Hotel offer 3 different room options, all of which include breakfast, lunch and dinner at our 
-            4 star restraunt, located inside the hotel. 
-            </p>
-        <p>Take some time to relax by our full-service pool and day spa.</p>    
-        </div>
-    
-       
-        <footer>
-        
-        <!-- need to fill in the footer -->
-        </footer>
     </body>
     <?php
     /* This bit of php is used to error test the form inputs*/

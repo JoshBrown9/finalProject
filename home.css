@@ -1,0 +1,47 @@
+ body {
+      position: relative; 
+  }
+  /*This sections will be moved to its own css file and will be imported*/      
+  #section1 {
+      padding-top:50px;
+      height:700px;
+      color:darkslategray; 
+      background-color:lightskyblue;
+}
+  #section2 {padding-top:50px;
+      height:700px;
+      color:darkslategray; 
+      background-color: lightgoldenrodyellow;
+}
+  #section3 {
+      padding-top:50px;
+      height:600px;
+      color:darkslategray; 
+      background-color: lightskyblue;}
+  #section4 {
+      padding-top:50px;
+      height:700px;
+      color:darkslategray; 
+      background-color: lightgoldenrodyellow;}
+  #checkroom{
+      padding-top:20px;
+      margin-top:40px; 
+      width:500px; height:500px; 
+      background-color:beige;}
+  #infopanel{
+      padding-top:20px; 
+      margin-top:40px; 
+      width: 500px;
+      height: 500px; 
+      background-color:beige;}
+  #emailform{
+      padding-top:20px; 
+      margin-top:40px; 
+      width:auto; 
+      height: 150px; 
+      background-color:lightblue;}
+  #emaillist{
+      padding-top:20px; 
+      background-color:lightgreen; 
+      color:darkslategray;
+}
